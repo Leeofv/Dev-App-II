@@ -5,7 +5,13 @@ void main() {
   
   double media = (nota1+nota2)/2;
   
-  print("A media das notas do aluno $nomeAluno é: $media ");
+  print("A media do aluno $nomeAluno é: $media ");
+  
+  if(media >= 6){
+    print("O aluno está aprovado!!!");
+  } else{
+    print("O aluno está reprovado!!!");
+  }
   
   
   
