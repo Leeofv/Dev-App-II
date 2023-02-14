@@ -1,0 +1,13 @@
+void main() {
+  String nomeAluno = "Gabriel";
+  double nota1 = 8;
+  double nota2 = 7;
+  
+  double media = (nota1+nota2)/2;
+  
+  print("A media das notas do aluno $nomeAluno é: $media ");
+  
+  
+  
+  
+}
