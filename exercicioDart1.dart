@@ -1,9 +1,8 @@
+import 'dart:math';
 void main() {
-    double valor1;
-    double valor2;
-
-    valor1 = 144;
-    valor2 = 2;
+    
+    double valor1 = 144;
+    double valor2 = 2;
    
 
     double soma = valor1+valor2;
@@ -21,6 +20,10 @@ void main() {
     double restoDivisao = valor1%valor2;
     print("O resto da divisão entre o $valor1 e o $valor2 é: $restoDivisao");
   
-    
+    num potencia = pow(valor1, valor2);
+    print("A potencia entre o $valor1 e o $valor2 é: $potencia");
+  
+    num raiz = pow(valor1, 1 / valor2);
+    print("A raiz entre o $valor1 e o $valor2 é: $raiz");
   
 }
