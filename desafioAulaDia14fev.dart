@@ -2,7 +2,7 @@ void main() {
   String nomeAluno = "Gabriel";
   double nota1 = 3;
   double nota2 = 7;
-  double mediaEscola = 6;
+  const mediaEscola = 6;
   String aprovado = "Aprovado";
   String reprovado = "reprovado";
   
