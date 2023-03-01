@@ -9,22 +9,28 @@ void main() {
  Terceira idade = de 50 a 60 anos
 
 */
-  String nome = "Leonardo";
-  int idade = 32;
-  
-  if (idade < 8 && idade > 60){
-    print("Não pode ser nadador, mínimo 8 anos e no máximo 60 anos.");
-  }else if (idade >=8 && idade <= 10){
-    print("Nome do nadador: $nome\n"
-      "Classificação Infantil");
-  }else if (idade >=11 && idade <=17){
-    print("Nome do nadador: $nome\n"
-         "Classificação Juvenil");
-  }else if (idade >=18 && idade <=49){
-    print("Nome do nadador: $nome\n"
-         "Classificação Adulto");
-}else{
-    print("Nome do nadador: $nome\n"
-         "Classificação Terceira idade");
-}
+  stdout.write("\nInforme os dados da pessoa \n Nome: ");
+  String nome = stdin.readLineSync().toString();
+
+  stdout.write("Idade: ");
+  int idade = int.parse(stdin.readLineSync().toString());
+
+  String classificacao;
+
+  if (idade < 8 || idade > 60) {
+    classificacao = "Não pode ser nadador, mínimo 8 anos e no máximo 60 anos.";
+  } else if (idade <= 10) {
+    classificacao = "Classificação Infantil";
+  } else if (idade <= 17) {
+    classificacao = "Classificação Juvenil";
+  } else if (idade <= 49) {
+    classificacao = "Classificação Adulto";
+  } else {
+    classificacao = "Classificação Terceira idade";
+  }
+
+  print("\n\nDados do cliente:\n"
+      "Nome: $nome\n"
+      "Idade: $idade\n"
+      "Sexo: $classificacao\n");
 }
