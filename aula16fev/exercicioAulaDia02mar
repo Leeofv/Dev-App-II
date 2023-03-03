@@ -1,0 +1,20 @@
+void main() {
+  print("-----------FOR------------\n");
+  for (int i = 1; i <= 10; i++) {
+    print(i);
+  }
+
+  print("-----------WHILE------------\n");
+  int indice = 0;
+  while (indice < 10) {
+    indice++;
+    print(indice);
+  }
+
+  int contador = 0;
+  print("-----------DO------------\n");
+  do {
+    contador++;
+    print(contador);
+  } while (contador < 10);
+}
