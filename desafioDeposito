@@ -1,0 +1,17 @@
+import 'dart:io';
+
+void main() {
+  stdout.write("\n\nInforme o valor do depósito: ");
+  double deposito = double.parse(stdin.readLineSync().toString());
+
+  stdout.write("\n\nInforme o valor que você deseja atingir: ");
+  double valor = double.parse(stdin.readLineSync().toString());
+
+  int meses = 0;
+
+  while (deposito < valor && deposito > 0) {
+    deposito *= 1.006;
+    meses++;
+  }
+  print("\n\nLevou $meses meses para render\n\n");
+}
